@@ -53,7 +53,7 @@ const Code: React.FC<CodeProps> = ({ code }) => {
                 onChange={(e) => setCodeToEdit(e.target.value)}
               />
             </div>
-            <button type="submit" className="btn mt-3">
+            <button type="submit" className="btn mt-3 flex items-center justify-center">
               Update
             </button>
           </form>
@@ -66,7 +66,7 @@ const Code: React.FC<CodeProps> = ({ code }) => {
             "{codeToEdit}" ?
           </h3>
           <div className="modal-action">
-            <button onClick={() => handleDeleteCode(code.id)} className="btn btn-error">Yes</button>
+            <button onClick={() => handleDeleteCode(code.id)} className="btn text-center">Yes</button>
           </div>
         </Modal>
       </td>
